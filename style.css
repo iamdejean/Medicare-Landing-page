@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(217, 255, 238);
+}
+
+.container-2{
+    display: flex;
+}
+
+.container-2 #box-2{
+    align-content: flex-end;
+}
+
+
+header{
+    padding-top: 30px;
+    min-height: 70px;
+}
+header a{
+    color: #394cf5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo{
+    float: left;
+}
+
+header #logo h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1{
+    color: green;
+    margin-top:300px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 20px;
+    color: #394cf5;
+}
+
+.buttons a.btn{
+    margin: 15px;
+    padding: 3px 30px;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgb(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#page-nav label, #hamburger {
+    display: none;
+}
+  
+#page-nav ul li {
+    display: inline-block;
+}
+  
+@media screen and (max-width: 768px){
+    
+    #page-nav label {
+      display: inline-block;
+      color: #394cf5;
+    }
+    
+    #page-nav ul, #hamburger  {
+      display: none;
+    }
+    #page-nav input:checked ~ ul {
+      display: block;
+    }
+}
+@media screen and (max-width:768px) {
+    .box-1, .box-2, #page-nav{
+        flex-direction: column;
+    }
+  }
