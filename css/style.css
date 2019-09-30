@@ -75,7 +75,6 @@ p{
 
 .box-2{
     flex: 1;
-    justify-content: flex-end;
 }
 
 @media screen and (max-width:768px) {
@@ -93,4 +92,24 @@ p{
         margin-top:0;
         font-size: 28px;
     }
+
+    nav {
+        background: none;
+        opacity: 1;
+    }
+      
+    .nav-links li a {
+        text-decoration: none;
+        color: #394cf5;
+        padding: .25rem
+    }
+      
+    .nav-links li a:hover {
+        color: green;
+    }
+      
+    .hidden-nav {
+        display: none;
+    }
+      
 }
